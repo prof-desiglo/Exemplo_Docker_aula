@@ -1,0 +1,5 @@
+docker compose up -d --build     # sobe em segundo plano
+docker compose logs -f web       # acompanha os logs do app
+docker compose exec db mysql -uappuser -papppass appdb   # entra no MySQL
+docker compose down              # para e remove os containers
+docker compose down -v           # idem, apagando também os dados
